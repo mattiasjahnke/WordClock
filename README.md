@@ -1,6 +1,6 @@
 # ⏰ WordClock
 
-*A Word Clock Screen Saver for MacOS*
+*A Word Clock Screen Saver for macOS*
 
 ## 🖥 Installation
 
