@@ -1,6 +1,6 @@
 # ⏰ WordClock
 
-A Word Clock Screen Saver for MacOS
+*A Word Clock Screen Saver for MacOS*
 
 ## 🖥 Installation
 
@@ -38,6 +38,10 @@ Apart from fixing the known and unknown problems - I could use your help to add 
 
 * **John Coates** - His screen saver project [Aerial](https://github.com/JohnCoates/Aerial) helped me a lot.
 * **Super Make Something** - Looking at the [Arduino Word Clock](https://github.com/SuperMakeSomething/arduino-neopixel-word-clock) logic saved me a bunch of time spent on if-statements.
+
+## Screen shot
+
+![](https://github.com/mattiasjahnke/WordClock/blob/master/screenshot.png)
 
 ## License
 
