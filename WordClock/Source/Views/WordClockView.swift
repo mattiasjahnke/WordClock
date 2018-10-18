@@ -34,7 +34,7 @@ class WordClockView: ScreenSaverView {
             return controller.window
         }
         
-        let controller = PreferencesWindowController(windowNibName: NSNib.Name(rawValue: "PreferencesWindow"))
+        let controller = PreferencesWindowController(windowNibName: "PreferencesWindow")
         
         preferencesController = controller
         return controller.window
@@ -84,6 +84,7 @@ class WordClockView: ScreenSaverView {
                 textField.alignment = .center
                 textField.alphaValue = 0.2
                 textField.font = NSFont.boldSystemFont(ofSize: 106)
+                textField.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
                 rowStack.addArrangedSubview(textField)
             }
             masterStack.addArrangedSubview(rowStack)
@@ -127,11 +128,11 @@ class WordClockView: ScreenSaverView {
         masterStack.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         masterStack.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         
-        masterStack.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: 200).isActive = true
-        masterStack.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: 200).isActive = true
+        masterStack.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: 20).isActive = true
+        masterStack.bottomAnchor.constraint(lessThanOrEqualTo: bottomAnchor, constant: 20).isActive = true
         
-        masterStack.leftAnchor.constraint(greaterThanOrEqualTo: leftAnchor, constant: 200).isActive = true
-        masterStack.rightAnchor.constraint(lessThanOrEqualTo: rightAnchor, constant: 200).isActive = true
+        masterStack.leftAnchor.constraint(greaterThanOrEqualTo: leftAnchor, constant: 20).isActive = true
+        masterStack.rightAnchor.constraint(lessThanOrEqualTo: rightAnchor, constant: 20).isActive = true
 
         refreshTime()
 
