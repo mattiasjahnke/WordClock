@@ -34,7 +34,7 @@ class WordClockView: ScreenSaverView {
             return controller.window
         }
         
-        let controller = PreferencesWindowController(windowNibName: "PreferencesWindow")
+        let controller = PreferencesWindowController(windowNibName: NSNib.Name(rawValue: "PreferencesWindow"))
         
         preferencesController = controller
         return controller.window
